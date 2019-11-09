@@ -1,0 +1,19 @@
+<!-- <div>
+    <h3 *ngFor="let user of users.data">
+        {{user.first_name}}
+    </h3>
+</div> -->
+<div class="contanier">
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let user of users?.data index as i">
+            <div class="card" style="width: 300px">
+                <img src="{{user.avatar}}" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{user.fullName}}</h5>
+                    <p class="card-text">{{user.email}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

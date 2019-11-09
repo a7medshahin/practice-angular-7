@@ -9,6 +9,8 @@ export class NavComponent implements OnInit {
 
   name = '';
   flag = false;
+
+  defaultRoute = 'home';
   constructor() {
     // for(let i = 0 ; i < this.links.length;i++)
     //  this.links[i]
@@ -19,6 +21,10 @@ export class NavComponent implements OnInit {
     // });
   }
   ngOnInit() {
+  }
+
+  logRoute(route: string) {
+    this.defaultRoute = route;
   }
 
   submit() {
